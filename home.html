@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSGH</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        #img {
+            /* width: 100vw; */
+            height: 90%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(https://cache.careers360.mobi/media/presets/720X480/colleges/social-media/media-gallery/63/2018/7/10/BITS-Pilani-Goa-Campus1.jpg);
+        }
+
+        body {
+            width: 100%;
+            box-sizing: border-box;
+            height: 100vh;
+            margin: 0px;
+            font-family: 'Akaya Telivigala', cursive;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .h1 {
+            margin: 0px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        #head1 {
+            height: 50px;
+            color: rgb(255, 255, 255);
+            width: 100%;
+            position: absolute;
+            top: 0%;
+            background-color: #222831;
+            /* filter: opacity(0.5); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* position: fixed;
+            top: 0px; */
+        }
+
+        #head2 {
+            position: absolute;
+            top: 10%;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .h11 {
+            padding: 5px 15px 5px 15px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 20px;
+            /* background-image: linear-gradient(to right,#91074c,#3f14a3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: 0.4s; */
+
+        }
+
+        .h11:hover {
+            background-image: linear-gradient(to right, #00a7e9, #5431a3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: 0.4s;
+
+        }
+
+        .h11::after {
+            visibility: hidden;
+            display: block;
+            content: "";
+            border: 0.5px solid #5431a3;
+        }
+
+        .h11:hover::after {
+            visibility: visible;
+            transform: scaleX(0);
+            animation: underline 0.5s linear;
+            animation-fill-mode: both;
+
+        }
+
+
+
+        #welcome {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            top: 38%;
+            left: 30%;
+            color: white;
+            /* font-weight: bold; */
+            font-size: 55px;
+            font-family: 'Lobster', cursive;
+
+        }
+
+        #welcome div {
+
+            font-family: 'Dancing Script', cursive;
+        }
+
+        @keyframes underline {
+            50% {
+                transform: scaleX(0.5);
+            }
+
+            100% {
+                transform: scaleX(1);
+            }
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 83%;
+            width: 100%;
+            height: 15%;
+            text-align: center;
+
+        }
+
+        #container div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(208, 214, 215);
+            width: 60%;
+            height: 70%;
+            font-size: 20px;
+            /* border-radius: 10px; */
+            /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            font-family: 'Akaya Telivigala', cursive;
+            font-size: 30px;
+        }
+
+
+        #events {
+            background-color: #222831;
+            color: white;
+            height: 500px;
+        }
+
+        .ev1 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .e1 {
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 20px;
+        }
+
+        .e11 {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+
+        }
+
+        .ev12 {
+            position: relative;
+            bottom: 50px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul li {
+            padding: 5px;
+        }
+
+        .img {
+            /* width: 100%; */
+            width: 120px;
+            height: 90PX;
+            position: relative;
+            bottom: 7px;
+            left: 695px;
+            filter: invert();
+        }
+
+        .im {
+            width: 120px;
+            height: 90PX;
+            position: relative;
+            bottom: 23px;
+            left: 695px;
+            /* filter: invert(); */
+
+        }
+
+        .ev2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .e2 {
+            box-shadow: rgba(228, 223, 223, 0.15) 0px 48px 100px 0px;
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .img1 {
+            width: 100%;
+            height: 80%;
+        }
+
+        .img1 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .txt {
+            display: flex;
+            /* border: 1px solid red; */
+            margin: 0%;
+            height: 20%;
+            width: 100%;
+        }
+
+        .t1 {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(246, 177, 86);
+        }
+
+        .date {
+            font-size: 30px;
+        }
+
+        #txt1 .t2 {
+            width: 70%;
+            padding-left: 20px;
+            padding-top: 20px;
+            font-size: 20px;
+        }
+
+        #txt2 .t2 {
+            font-size: 20px;
+            padding-left: 20px;
+            padding-top: 7px;
+        }
+
+        #txt3 .t2 {
+            font-size: 20px;
+            padding-left: 20px;
+            padding-top: 5px;
+        }
+
+        #r {
+            height: 300px;
+        }
+
+        footer {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+
+        }
+
+        .foot {
+            width: 90%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .important {
+            font-size: 20px;
+            margin-bottom: 15px;
+            text-decoration: underline;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 48
+        }
+
+        .address {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .address div {
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+
+        .loc {
+            display: inline-block;
+            position: relative;
+            bottom: 5px;
+        }
+
+        .content {
+            margin: auto;
+        }
+
+
+        .everything {
+            /* margin: 40px 100px 100px 100px; */
+            height: 800px;
+            background-color: #222831;
+            margin-top: 0px;
+        }
+
+
+        .heading {
+            /* font-family: verdana; */
+            font-size: 30px;
+            margin: 0px auto -30px;
+            text-align: center;
+            color: white;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .column {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .row1 {
+            /* margin-left: auto;
+            margin-right: auto; */
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            /* justify-content: space-between; */
+        }
+
+        .row2 {
+            /* margin-left: auto;
+            margin-right: auto; */
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            /* justify-content: space-between; */
+        }
+
+
+        .card img {
+            width: 80%;
+            height: 80%;
+        }
+
+        .card {
+            /* box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.2); */
+            /* transition: 0.3s; */
+            width: 90%;
+            transition: transform .2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img1a {
+            /* transition: 0.3s; */
+            width: 90%;
+        }
+        .card img:hover{
+
+            box-shadow:0 10px 50px rgb(13, 78, 124);
+        }
+        .card:hover {
+            /* box-shadow: 0 8px 16px 0 rgb(255, 0, 0); */
+            transform: scale(1.05);
+        }
+
+
+        .container {
+            padding: 2px 16px;
+        }
+
+        .imgser {
+            width: 120px;
+            height: 90PX;
+            position: relative;
+
+            bottom: 7px;
+            left: 695px;
+            filter: invert();
+        }
+
+
+
+
+
+        .headinga {
+            /* font-family: verdana; */
+            font-size: 30px;
+            margin: 20px auto 20px;
+            text-align: center;
+        }
+
+        .everythinga {
+            margin: 70px 100px 100px 100px;
+        }
+
+        
+        .text {
+            font-size: 20px;
+            /* margin: 35px auto; */
+            text-align: center;
+            position: relative;
+            bottom: 60px;
+        }
+
+        .view {
+            font-size: 19px;
+            margin: 50px auto 20px;
+            text-align: center;
+        }
+
+        .rowa {
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .carda {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            transition: transform .2s;
+            margin: auto;
+            width: 90%;
+        }
+
+        .carda:hover {
+            box-shadow: 0 20px 50px 0 rgb(0, 0, 0);
+            transform: scale(1.1);
+        }
+
+        .container {
+            padding: 2px 16px;
+        }
+
+        .carda img {
+            width:100%;
+            object-fit: cover;
+        }
+        #im12{
+            position: relative;
+    bottom: 40px;
+    left: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="img">
+    </div>
+    <div id="head1">
+        <div class="h1">Maa Saraswati Girls Hostel</div>
+
+    </div>
+    <div id="head2">
+        <div class="h11"> <a href="home.html">HOME</a> </div>
+        <div class="h11"> <a href="#everythinga">ABOUT</a> </div>
+        <div class="h11"> <a href="#everything"> SERVICES</a></div>
+        <div class="h11"> <a href="#r"> RULES AND REGULATIONS</a></div>
+        <!-- <div class="h11"> <a href="#"> GALLERY</a></div> -->
+        <div class="h11"> <a href="#events"> EVENTS</a></div>
+        <div class="h11"></div>
+        <div class="h11"></div>
+        <div class="h11" id="log"> <a href="login2.html"> LOGIN
+
+            </a>
+
+        </div>
+
+    </div>
+    <div id="welcome">
+        <div>Welcome to</div>
+        <div>Maa Saraswati Girls Hostel</div>
+    </div>
+    <div id="container">
+        <div id="text">
+            "There is no limit to what women can accomplish."
+        </div>
+    </div>
+
+    <div class="everythinga" id="everythinga">
+        <div class="headinga">
+            WELCOME
+        </div>
+        <img src="heading.png" alt="" class="im" id="im12">
+        
+        <div class="text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores adipisci impedit quae pariatur libero
+            deleniti
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores adipisci impedit quae pariatur libero
+            deleniti
+            nemo fugit eveniet explicabo sed quos cumque, asperiores neque, possimus sint maxime iure unde repudiandae?
+
+        </div>
+
+        <div class="rowa">
+            <div class="column">
+                <div class="carda" id=" img1a"><img src="abt1.jfif" alt="history" style="width:100%;height:100%"></div>
+            </div>
+            <div class="column">
+                <div class="carda" id=" img2a"><img src="abt2.jfif" alt="location" style="width:100%;height:100%"></div>
+            </div>
+            <div class="column">
+                <div class="carda" id=" img3a"><img src="abt3.jfif" alt="warden" style="width:100%;height:100%"></div>
+            </div>
+            <div class="column">
+                <div class="carda" id=" img4a"><img src="abt4.jfif" alt="staff" style="width:100%;height:100%"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="everything" id="everything">
+        <div class="heading e1">
+            <br>
+            SERVICES
+        </div>
+        
+           <br><br><img src="heading.png" alt="" class="img">
+
+      
+        <div class="row">
+            <div class="row1">
+                <!-- <div class="column"> -->
+                <div class="card" id="card1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSB8-I_54QsMgVOZaWNtTS4k25v2MfYbhGCw&usqp=CAU"
+                        alt="" class="img1a">
+                    <!-- <img src="hostel.jpg" alt="history" style="width:90%"></div> -->
+                </div>
+                <!-- </div> -->
+                <!-- <div class="card"> -->
+                <div class="card"><img
+                        src="https://media.istockphoto.com/photos/woman-with-ironed-clothes-in-the-laundry-picture-id1092103792?k=20&m=1092103792&s=612x612&w=0&h=Xz-NZNe6pg0n66n4DiG7rEapKvczP6Kwb7k1PMQhabU="
+                        alt="" class="img1a"></div>
+                <!-- </div> -->
+                <!-- <div class="card"> -->
+                <div class="card"> <img
+                        src="data:image/jpeg;base64,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"
+                        alt="" class="img1a"></div>
+                <!-- </div> -->
+            </div>
+
+
+            <div class="row2">
+                <!-- <div class="column"> -->
+                <div class="card"><img
+                        src="https://thumbs.dreamstime.com/b/wife-housekeeping-cleaning-concept-happy-young-woman-blue-rubber-gloves-wiping-dust-using-mop-cleaning-floor-176828941.jpg"
+                        alt="" class="img1a"></div>
+                <!-- </div>
+            <div class="column"> -->
+                <div class="card"><img
+                        src="https://5.imimg.com/data5/KS/TA/GLADMIN-51614790/spacoius-well-furnished-rooms-500x500.png"
+                        alt="" class="img1a"></div>
+                <!-- </div>
+            <div class="column"> -->
+                <div class="card"><img
+                        src="https://images.jdmagicbox.com/comp/service_catalogue/female-security-guard-service-for-hostels-9999px342.x342.200611161143.m3w3-eifepdc.jpg"
+                        alt="" class="img1a"></div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div id="r">
+        <div class="e11">Rules and Regulations</div>
+
+        <img src="heading.png" alt="" class="im">
+        <div class="ev12">
+
+            <ul>
+                <li>No Ragging. RAGGING is a CRIMINAL offence.</li>
+                <li>Not allowed to go out of campus after 10pm. </li>
+                <li>Entry in the register of the main gate.</li>
+                <li>No entry in forest area.</li>
+            </ul>
+
+        </div>
+    </div>
+    <div id="events">
+        <div class="ev1">
+
+            <div class="e1">Events</div>
+        </div>
+        <img src="heading.png" alt="" class="img">
+        <div class="ev2">
+            <div class="e2" id="event1">
+                <div class="img1"><img src="diwali.jpg" alt=""></div>
+                <div class="txt" id="txt1">
+                    <div class="t1">
+                        <div class="date">24</div>
+                        <div class="mon">October</div>
+                    </div>
+                    <div class="t2">Diwali Celebrations</div>
+                </div>
+            </div>
+            <div class="e2" id="event2">
+                <div class="img1"><img src="ganesh.jpg" alt=""></div>
+                <div class="txt" id="txt2">
+                    <div class="t1">
+                        <div class="date">31</div>
+                        <div class="mon">August</div>
+                    </div>
+                    <div class="t2">Ganesh Chaturti Celebrations</div>
+                </div>
+            </div>
+            <div class="e2" id="event3">
+                <div class="img1"><img src="independance.jpg" alt=""></div>
+                <div class="txt" id="txt3">
+                    <div class="t1">
+                        <div class="date">15</div>
+                        <div class="mon">August</div>
+                    </div>
+                    <div class="t2">Independance Day Celebrations</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="address">
+                <div class="important">ADDRESS</div>
+                <div class="location">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <div class="loc">location: abcdefghijklmno</div>
+                </div>
+                <div class="phn">
+                    <span class="material-symbols-outlined">
+                        call
+                    </span>
+                    <div class="loc">Phone Number : xxxxxxxx</div>
+                </div>
+
+            </div>
+            <div class="imp">
+                <div class="important">IMPORTANT PHONE NUMBERS</div>
+                <div class="ph">Ambulance: 9425805538</div>
+                <div class="ph">Dr. Manu Srivastava(Warden): 9818614959</div>
+                <div class="ph">Dr.Kusum Bharthi(Associate Warden): 9406711296</div>
+                <div class="ph"></div>
+
+            </div>
+            <div class="imp2">
+                <div class="important">IMPORTANT PHONE NUMBERS</div>
+                <div class="ph">Mrs. Manisha Rinayat(Hostel Attendant): 9340953562</div>
+                <div class="ph">Mrs. Neha Jaitly(Care Taker): 7049309648</div>
+                <div class="ph">Compounder: 9425802566</div>
+                <div class="ph"></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
